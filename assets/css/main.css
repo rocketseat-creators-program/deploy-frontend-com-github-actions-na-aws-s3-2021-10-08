@@ -1,0 +1,158 @@
+:root {
+  --background: #121214;
+  --green: #04d361;
+  --green-low: #1c2a24;
+  --green-darker: #0f3924;
+  --success-low: #051b0d;
+  --red: #ce4a4a;
+  --red-light: #eb3223;
+  --red-darker: #3d1b23;
+  --error: #e83f5b;
+  --orange: #ff7a29;
+  --orange-darker: #412c17;
+  --orange-darkness: #593918;
+  --yellow: #ffcd1e;
+  --primary: #8257e5;
+  --primary-darker: #28203e;
+  --primary-hover: #9466ff;
+  --primary-border: #6833e4;
+  --primary-shape: #734bd1;
+  --gray: #e1e1e6;
+  --text: #a8a8b3;
+  --base-text: #c4c4cc;
+  --support: #737380;
+  --shape: #202024;
+  --shape-dark: #3c3c42;
+  --shape-hover: #29292e;
+  --icons: #41414d;
+  --attention: #fd951f;
+  --borders: #323238;
+  --experts: #db3a2c;
+  --react: #2ac7e3;
+  --node: #8cc84b;
+  --elixir: #a32ddf;
+  --react-native: #4763ff;
+  --flutter: #0389ff;
+  --dowhile: #ff068a;
+  --black: #09090a;
+  --white: #fff;
+  --scrollbar: #4d4d57;
+  --scrollbar-background: transparent;
+  --primary-gradient-top: linear-gradient(180deg,#1d1929,rgba(18,18,20,0));
+  --orange-gradient-left: linear-gradient(90deg,#fd951f,rgba(253,149,31,0.25));
+  --border-gradient: linear-gradient(270deg,#323238,rgba(50,50,56,0.25));
+  --darker-gradient-top: linear-gradient(180deg,#202024,rgba(32,32,36,0.25));
+  --darker-gradient: linear-gradient(90deg,#202024,rgba(32,32,36,0.25));
+  --blue-gradient-left: linear-gradient(90deg,#29292e,rgba(41,41,46,0));
+  --blue-gradient-right: linear-gradient(90deg,#202024,rgba(32,32,36,0.25));
+  --menu-mobile-active: linear-gradient(90deg,#09090a,rgba(9,9,10,0));
+  --font-text: 16px;
+}
+
+html {
+  font-family: Roboto,sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+#header{
+  box-shadow: inset 0 -1px 0 var(--shape-hover);
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+#box-sobre .right{
+  float: right;
+  position: absolute;
+  right: 0;
+}
+#box-sobre .left{
+  padding-top: 110px;
+  float: left;
+  max-width: 530px;
+}
+#box-sobre .left .logo{
+  margin-bottom: 44px;
+}
+#box-sobre .left .logo img{
+  float: left;
+  margin-right: 36px;
+}
+#box-sobre .left .logo span{
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--experts);
+}
+#box-sobre .left .title{
+  font-size: 56px;
+  line-height: 60px;
+  margin-bottom: 24px;
+  color: var(--gray);
+}
+#box-sobre .left .subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 40px;
+  color: var(--gray);
+  max-width: 457px;
+}
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid var(--gray);
+  border-radius: 50%;
+  border-top: 16px solid var(--experts);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#loader-ani {
+  display: none;
+  text-align: center;
+}
